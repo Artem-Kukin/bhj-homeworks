@@ -35,9 +35,12 @@ document.addEventListener("keydown", (e) => {
           ${rValue}
             </div>
             </div>
-         `;
+            `;
     } else {
       alert("Невозможно отправить пустое сообщение");
     }
+  }
+  if (textBox.value.length == 0 && e.keyCode == 32) {
+    e.preventDefault();
   }
 });
